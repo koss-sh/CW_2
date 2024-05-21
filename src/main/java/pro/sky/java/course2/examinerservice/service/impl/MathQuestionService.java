@@ -3,19 +3,18 @@ package pro.sky.java.course2.examinerservice.service.impl;
 import org.springframework.stereotype.Service;
 import pro.sky.java.course2.examinerservice.domain.Question;
 
-import pro.sky.java.course2.examinerservice.repository.impl.JavaQuestionRepository;
+import pro.sky.java.course2.examinerservice.repository.impl.MathQuestionRepository;
 import pro.sky.java.course2.examinerservice.service.QuestionService;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Random;
-
 @Service
-public class JavaQuestionService implements QuestionService {
+public class MathQuestionService implements QuestionService {
     private final Random random = new Random();
-    private final JavaQuestionRepository questionRepository;
+    private final MathQuestionRepository questionRepository;
 
-    public JavaQuestionService(JavaQuestionRepository questionRepository) {
+    public MathQuestionService(MathQuestionRepository questionRepository) {
                 this.questionRepository = questionRepository;
     }
 
@@ -47,3 +46,4 @@ public class JavaQuestionService implements QuestionService {
     }
 
 }
+
