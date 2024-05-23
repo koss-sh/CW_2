@@ -23,7 +23,7 @@ public class ExaminerServiceImpl implements ExaminerService {
     }
 
     @Override
-    public Collection<Question> getQuestionS(int amount) {
+    public Collection<Question> getQuestions(int amount) {
         if (amount <= 0 || amount > (javaQuestionService.getAll().size() + mathQuestionService.getAll().size())) {
             throw new IncorrectAmountException();
         }

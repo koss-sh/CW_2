@@ -19,7 +19,7 @@ public class MathQuestionRepository implements QuestionRepository {
     public MathQuestionRepository() {
     }
     @PostConstruct
-    void init() {
+    public void init() {
         questions.add(new Question("MathQuestion-1", "MathAnswer-1"));
         questions.add(new Question("MathQuestion-2", "MathAnswer-2"));
         questions.add(new Question("MathQuestion-3", "MathAnswer-3"));

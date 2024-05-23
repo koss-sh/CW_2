@@ -21,7 +21,7 @@ public class JavaQuestionRepository implements QuestionRepository {
     }
 
     @PostConstruct
-    void init() {
+    public void init() {
         questions.add(new Question("JavaQuestion-1", "JavaAnswer-1"));
         questions.add(new Question("JavaQuestion-2", "JavaAnswer-2"));
         questions.add(new Question("JavaQuestion-3", "JavaAnswer-3"));
